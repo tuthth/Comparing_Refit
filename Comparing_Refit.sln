@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Comparing_Refit", "Comparing_Refit.csproj", "{1C3673AF-8257-46BA-8357-E58FC0EA5829}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C3673AF-8257-46BA-8357-E58FC0EA5829}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C3673AF-8257-46BA-8357-E58FC0EA5829}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C3673AF-8257-46BA-8357-E58FC0EA5829}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C3673AF-8257-46BA-8357-E58FC0EA5829}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EDC2E166-B467-41F2-9226-DF137C6E2274}
+	EndGlobalSection
+EndGlobal
