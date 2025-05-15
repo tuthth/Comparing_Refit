@@ -1,0 +1,14 @@
+﻿version: '3.8'
+services:
+  clamav:
+    image: clamav/clamav:latest
+    ports:
+      - "3310:3310"
+  comparing_refit:
+    build: .
+    depends_on:
+      - clamav
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8080:8080"

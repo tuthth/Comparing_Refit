@@ -27,6 +27,10 @@ public class Program
 
         builder.Services.AddEndpoints();
 
+        builder.Services.AddAntiforgery();
+
+        ClamAVMapping.Initialize(builder.Configuration);
+
         var app = builder.Build();
 
         // Configure the HTTP request pipeline.
@@ -38,12 +42,17 @@ public class Program
             options.WithTheme(ScalarTheme.Default).WithTitle("Scalar API Reference").WithDarkModeToggle(true);
         });
 
-        app.MapEndpoints();
-
         app.UseHttpsRedirection();
+
+        app.UseRouting();
+
+        app.UseAntiforgery();
 
         app.UseAuthentication();
         app.UseAuthorization();
+
+
+        app.MapEndpoints();
 
         app.MapControllers();
 
